@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Information</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Vehicle Information</h1>
+    </header>
+
+    <main aria-label="Car Gallery">
+      <article id="nsx" aria-labelledby="nsx-heading">
+        <h2 id="nsx-heading">1990 Honda NSX</h2>
+        <figure>
+          <img
+            src="../images/nsx.jpg"
+            alt="Front three-quarter view of a silver 1990 Honda NSX sports car"
+            width="400"
+          />
+          <figcaption>1990 Honda NSX — Lightweight aluminum body design</figcaption>
+        </figure>
+        <p>
+          The 1990 Honda NSX (New Sportscar eXperimental) is a groundbreaking
+          sports car featuring a lightweight aluminum chassis and body. It was
+          the first mass-produced car to use such extensive aluminum
+          construction, enhancing performance and efficiency. The NSX was
+          powered by a mid-mounted 3.0L V6 engine with Honda's innovative VTEC
+          (Variable Valve Timing and Lift Electronic Control) system.
+        </p>
+      </article>
+
+      <article id="rx8" aria-labelledby="rx8-heading">
+        <h2 id="rx8-heading">2003 Mazda RX-8</h2>
+        <figure>
+          <img
+            src="../images/rx8.jpg"
+            alt="Red 2003 Mazda RX-8, smiling at you the viewers."
+            width="400"
+          />
+          <figcaption>2003 Mazda RX-8 — Featuring the Renesis rotary engine</figcaption>
+        </figure>
+        <p>
+          The 2003 Mazda RX-8 is a unique sports car known for its rotary
+          engine, the Renesis. Unlike traditional piston engines, the rotary
+          engine operates on a different principle, offering smooth power
+          delivery and high revving capabilities. The RX-8 features a 1.3L
+          rotary engine, rear-wheel drive, and distinctive freestyle rear doors
+          for easy rear seat access.
+        </p>
+      </article>
+
+      <article id="cayman" aria-labelledby="cayman-heading">
+        <h2 id="cayman-heading">2017 Porsche Cayman 718</h2>
+        <figure>
+          <img
+            src="../images/cayman.jpg"
+            alt="2017 Porsche Cayman 718 coupe"
+            width="400"
+          />
+          <figcaption>2017 Porsche Cayman 718 — Mid-engine turbocharged performance</figcaption>
+        </figure>
+        <p>
+          The 2017 Porsche Cayman 718 is a mid-engine sports car that combines
+          agility and power. It is powered by a turbocharged 2.0L flat-four
+          engine, delivering impressive performance. “718” refers to Porsche's
+          historic race cars from the late 1950s and early 1960s, emphasizing
+          its connection to motorsport heritage. Key features include Porsche
+          Stability Management (PSM) and a precise six-speed manual
+          transmission.
+        </p>
+      </article>
+
+      <article id="civictyper" aria-labelledby="civic-heading">
+        <h2 id="civic-heading">2022 Honda Civic Type-R</h2>
+        <figure>
+          <img
+            src="../images/civictyper.jpg"
+            alt="2022 Honda Civic Type-R hatchback"
+            width="400"
+          />
+          <figcaption>2022 Honda Civic Type-R — Turbocharged high-performance hatchback</figcaption>
+        </figure>
+        <p>
+          The 2022 Honda Civic Type-R is a high-performance hatchback designed
+          for track and road. It features a turbocharged 2.0L inline-four engine
+          producing impressive power and torque. Key technologies include
+          Honda's Dual Axis Strut Front Suspension for improved handling and the
+          advanced Honda Sensing safety suite.
+        </p>
+      </article>
+    </main>
+
+    <footer aria-label="Talk to Us!">
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Information</h2>
+        <address>
+          <p><strong>Petersen Automotive Museum</strong></p>
+          <p>6060 Wilshire Blvd, Los Angeles, CA 90036</p>
+          <p>Phone: <a href="tel:+13239302277">(323) 930-2277</a></p>
+          <p>
+            Website:
+            <a href="https://www.petersen.org" target="_blank" rel="noopener noreferrer"
+              >www.petersen.org</a
+            >
+          </p>
+        </address>
+      </section>
+
+      <section id="feedback" aria-labelledby="feedback-heading">
+        <h2 id="feedback-heading">Choose Your Favorite Vehicle</h2>
+        <form action="/submit" method="post" aria-describedby="feedback-desc">
+          <p id="feedback-desc">Please select a vehicle and share your reason for choosing it.</p>
+
+            <label for="vehicle">Which vehicle would you choose?</label>
+            <select id="vehicle" name="vehicle" required>
+              <option value="">Select a vehicle</option>
+              <option value="1990-honda-nsx">1990 Honda NSX</option>
+              <option value="2003-mazda-rx8">2003 Mazda RX-8</option>
+              <option value="2017-porsche-cayman-718">2017 Porsche Cayman 718</option>
+              <option value="2022-honda-civic-type-r">2022 Honda Civic Type-R</option>
+            </select>
+            <br><br>
+
+            <label for="reason">Why did you choose this vehicle?</label>
+            <textarea
+              id="reason"
+              name="reason"
+              rows="4"
+              cols="50"
+              required
+              aria-required="true"
+            ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Information</title>
+  </head>
+  <body>
+    <h1>Vehicle Information</h1>
+    <div>
+      <h2>1990 Honda NSX</h2>
+      <img src="../images/nsx.jpg" alt="1990 Honda NSX" width="400" />
+      <div>
+        The 1990 Honda NSX (New Sportscar eXperimental) is a groundbreaking
+        sports car featuring a lightweight aluminum chassis and body. It was the
+        first mass-produced car to use such extensive aluminum construction,
+        enhancing performance and efficiency. The NSX was powered by a
+        mid-mounted 3.0L V6 engine with Honda's innovative VTEC (Variable Valve
+        Timing and Lift Electronic Control) system.
+      </div>
+
+      <h2>2003 Mazda RX-8</h2>
+      <img src="../images/rx8.jpg" alt="2003 Mazda RX-8" width="400" />
+      <div>
+        The 2003 Mazda RX-8 is a unique sports car known for its rotary engine,
+        the Renesis. Unlike traditional piston engines, the rotary engine
+        operates on a different principle, offering smooth power delivery and
+        high revving capabilities. The RX-8 features a 1.3L rotary engine,
+        rear-wheel drive, and distinctive freestyle rear doors for easy rear
+        seat access.
+      </div>
+
+      <h2>2017 Porsche Cayman 718</h2>
+      <img src="../images/cayman.jpg" alt="2017 Porsche Cayman 718" width="400" />
+      <div>
+        The 2017 Porsche Cayman 718 is a mid-engine sports car that combines
+        agility and power. It is powered by a turbocharged 2.0L flat-four
+        engine, delivering impressive performance. "718" refers to Porsche's
+        historic race cars from the late 1950s and early 1960s, emphasizing its
+        connection to motorsport heritage. Key features include Porsche
+        Stability Management (PSM) and a precise six-speed manual transmission.
+      </div>
+
+      <h2>2022 Honda Civic Type-R</h2>
+      <img
+        src="../images/civictyper.jpg"
+        alt="2022 Honda Civic Type-R"
+        width="400"
+      />
+      <div>
+        The 2022 Honda Civic Type-R is a high-performance hatchback designed for
+        track and road. It features a turbocharged 2.0L inline-four engine
+        producing impressive power and torque. Key technologies include Honda's
+        Dual Axis Strut Front Suspension for improved handling and the advanced
+        Honda Sensing safety suite.
+      </div>
+    </div>
+
+    <footer>
+      <h2>Contact Information</h2>
+      <div><strong>Petersen Automotive Museum</strong></div>
+      <div>6060 Wilshire Blvd, Los Angeles, CA 90036</div>
+      <div>Phone: (323) 930-2277</div>
+      <div>
+        Website:
+        <a href="https://www.petersen.org" target="_blank">www.petersen.org</a>
+      </div>
+
+      <h2>Choose Your Favorite Vehicle</h2>
+      <form action="/submit" method="post">
+        <div>
+          <label for="vehicle">Which vehicle would you choose?</label><br />
+          <select id="vehicle" name="vehicle" required>
+            <option value="1990-honda-nsx">1990 Honda NSX</option>
+            <option value="2003-mazda-rx8">2003 Mazda RX-8</option>
+            <option value="2017-porsche-cayman-718">
+              2017 Porsche Cayman 718
+            </option>
+            <option value="2022-honda-civic-type-r">
+              2022 Honda Civic Type-R
+            </option>
+          </select>
+          <br /><br />
+        </div>
+        <div>
+          <label for="reason">Why did you choose this vehicle?</label><br />
+          <textarea
+            id="reason"
+            name="reason"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br /><br />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
