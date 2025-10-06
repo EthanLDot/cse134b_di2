@@ -43,4 +43,21 @@ b) Why might I still be talking about it?
 
 ---
 
+### Tampermonkey Demo
+
+Hopefully by the end of this discussion you should easily be able to earn at least some extra credit for HW1.
+
+Tampermonkey is easy to install as an extension for Chrome and some non-Chrome browsers.
+
+Feel free to copy the contents of tampermonkey.js directly into the first created script. Then visit the homepage realethanlee.dev to see if there's any obvious effect.
+
+Once you feel comfortable with Tampermonkey and how it works, figure out how to do the following:
+
+a) Change the header of webaim.org to a similar effect. Note that for whatever reason when I created realethanlee.dev I made the modifiable text an h2 element. webaim.org, in contrast, uses h1 so you will need to create an additional const h1 variable. HINT: You will need to add a new @match entry.
+
+b) Try https://realethanlee.dev/about_me. Do you see the script working there? If not, look in the original script for a GIANT hint and implement the needed changes.
+
+c) Using google or LLM of your choice, figure out how you can get all paragraph/p elements on the page. Change them all to use the "Chiller" font. Make sure this works for both my website and webaim.
+
+
 **Remaining time:** Bonus office hours for HW1.
